@@ -1,0 +1,71 @@
+.subscription-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.subscription-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+  align-items: stretch; /* Ensures items align vertically */
+}
+
+.subscription-item {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.subscription-item:hover {
+  transform: scale(1.05);
+}
+
+.subscription-item img {
+  width: 100px;
+  height: auto;
+  margin: 0 auto 10px auto; /* centers the image horizontally */
+  display: block;
+}
+
+
+.subscription-item h3 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.subscription-item p {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.subscription-price {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.subscription-item button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin-top: auto; /* Keeps button at the bottom */
+}
+
+.subscription-item button:hover {
+  background: #0056b3;
+}
