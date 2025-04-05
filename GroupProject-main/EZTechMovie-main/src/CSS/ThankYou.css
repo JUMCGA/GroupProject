@@ -1,0 +1,17 @@
+.thank-you-container {
+    text-align: center;
+    padding: 50px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.thank-you-container h2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.thank-you-container p {
+    font-size: 1.2rem;
+    color: #555;
+}

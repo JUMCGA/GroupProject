@@ -1,0 +1,80 @@
+.subscription-page {
+  background: linear-gradient(to bottom, #1e2a38, #e6ecf2);
+  background-attachment: fixed;
+  color: #222;
+  padding: 40px 20px;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.subscription-container {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.subscription-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.subscription-item {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.subscription-item:hover {
+  transform: scale(1.05);
+}
+
+.subscription-item img {
+  width: 100px;
+  height: auto;
+  margin: 0 auto 10px auto;
+  display: block;
+}
+
+.subscription-item h3 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.subscription-item p {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.subscription-price {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.subscription-item button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin-top: auto;
+}
+
+.subscription-item button:hover {
+  background: #0056b3;
+}

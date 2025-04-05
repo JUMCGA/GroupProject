@@ -1,0 +1,204 @@
+.movies-page {
+    background: linear-gradient(to bottom, #1e2a38, #e6ecf2);
+    background-attachment: fixed;
+    color: #222;
+    padding: 40px 20px;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.movies-page h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+.movies-page input {
+    padding: 10px;
+    width: 50%;
+    max-width: 400px;
+    font-size: 1rem;
+    margin-right: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.movies-page button {
+    padding: 10px 16px;
+    font-size: 1rem;
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.movies-page button:hover {
+    background-color: #005fa3;
+}
+
+.filter-container,
+.sort-container {
+    margin-top: 20px;
+    font-size: 1rem;
+}
+
+.filter-container label,
+.sort-container label {
+    color: #ffffff;
+    font-weight: 500;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.filter-container select,
+.sort-container select {
+    margin-left: 10px;
+    padding: 6px 10px;
+    font-size: 1rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background-color: #ffffff;
+    color: #222;
+}
+
+.movie-results {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+    padding: 0 10px;
+}
+
+.movie-card {
+    background-color: #f5f7fa;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+}
+
+.movie-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.movie-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+}
+
+.movie-card-details {
+    padding: 10px 15px;
+    text-align: left;
+}
+
+.movie-card-details h3 {
+    margin: 0 0 5px;
+    font-size: 1.1rem;
+    color: #222;
+}
+
+.movie-card-details p {
+    margin: 4px 0;
+    font-size: 0.9rem;
+    color: #444;
+}
+
+.genre-tags {
+    margin-top: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.genre-tag {
+    background-color: #d7e9f7;
+    color: #333;
+    padding: 4px 8px;
+    border-radius: 6px;
+    font-size: 0.75rem;
+}
+
+.pagination {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 1rem;
+}
+
+.pagination button {
+    padding: 8px 16px;
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.pagination button:hover:not(:disabled) {
+    background-color: #005fa3;
+}
+
+.pagination button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.streaming-section {
+    background: #f9f9f9;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+}
+
+.streaming-section h3 {
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+    color: #222;
+    text-align: center;
+}
+
+.streaming-logos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.streaming-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 12px;
+    width: 120px;
+    height: 100px;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.streaming-logo:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    background-color: #eef6ff;
+}
+
+.streaming-logo-img {
+    height: 40px;
+    width: auto;
+    object-fit: contain;
+    margin-bottom: 8px;
+}

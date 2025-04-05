@@ -1,0 +1,20 @@
+/* Global background gradient for the whole page */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #1e2a38, #e6ecf2);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Ensure the rest of the app content takes the available space */
+.App {
+  text-align: center;
+  height: 100%;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
